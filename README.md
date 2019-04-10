@@ -1,0 +1,1 @@
+My code small tasks practice at https://js.checkio.org
