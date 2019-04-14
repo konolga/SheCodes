@@ -1,3 +1,7 @@
 .vscode
 /node_modules
 .env
+index.html
+package-lock.json
+package.json
+app.js
