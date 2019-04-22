@@ -18,11 +18,17 @@ all(isinstance(x, (int, float)) for x in args) */
 
 "use strict";
 
-function mostNumbers(numbers){
-   
-    return arguments.length?Math.max(...arguments)-Math.min(...arguments):0
-}
+function longRepeat(line) {
+    let res;
+      if( line.length===0){res=0;}
+        else if(line.match(/[^\w\s]|(.)\1+/gi)===null){res=1;}
+        else{let arr = line.match(/[^\w\s]|(.)\1+/gi).map(el=>el.length);
+            res = Math.max(...arr)}
+    return res;
+    }
 
+    //return (!line) ? 0 : line.match(/(.)\1*/g).sort((a, b) => b.length - a.length)[0].length;/
+    
 var assert = require('assert');
 
 if (!global.is_checking) {

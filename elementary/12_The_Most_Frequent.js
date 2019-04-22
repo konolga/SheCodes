@@ -1,4 +1,5 @@
-/* You have a sequence of strings, and you’d like to determine the most frequently occurring string in the sequence. It can be only one.
+/* You have a sequence of strings, and you’d like to determine the most frequently
+ occurring string in the sequence. It can be only one.
 
 Input: non empty Array of strings.
 
