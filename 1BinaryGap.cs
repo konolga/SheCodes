@@ -9,7 +9,7 @@ namespace Codility
     class _1BinaryGap
     {
 
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             int res = FindGap(1041);
             Console.WriteLine(res);
