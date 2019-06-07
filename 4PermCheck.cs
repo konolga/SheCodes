@@ -9,7 +9,7 @@ namespace Codility
     class _4PermCheck
     {
 
-        static void Main(string[] args)
+        static void Main4(string[] args)
         {
             int[] Arr = new int[] { 4, 1, 3, 2 };
             Console.WriteLine(Solution(Arr));
