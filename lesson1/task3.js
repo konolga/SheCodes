@@ -12,16 +12,37 @@
 
 'use strict';
 const foo = (str) =>{
-    let hasNumber=false;
-    let hasUpperLetter=false;
-    let hasNoSpace=false;
+    let isValid=true;
+    let message = '';
+    let countNumbers = 0;
+    let countLetters = 0;
+   
+        if(str.length < 8){
+            isvalid = false;
+            return message = "Password is less than 8 characters"
+        }
+        while(isvalid){
+        for (let element in str.split('')){
+            if (element == ' '){
+                isvalid = false;
+                return message = "No spaces allowed"
+            }
+            if(element.toLowerCase() != element.toUpperCase()){
+                countNumbers++;
+            }
+            else if (element == element.toUpperCase()){
+                countNumbers++;
+            }
 
-    while(!hasNoSpace&&!hasUpperLetter&&!hasNoSpace){
-        for (let element in str.split('')
-           {
-if (element)
-           }
-};
+            if(countLetters<1)    {
+                isvalid = false;
+                return message = "Should be at leat one uppercase letter"
+            }    
+            if(countNumbers<1){
+                isvalid = false;
+                return message = "Should be at leat one number"
+            }
+        };
 }
 
 let result = foo ('aabbbaccaa');
