@@ -11,39 +11,34 @@
 Перебор строки – с помощью циклов for / while. */
 
 'use strict';
-const foo = (str) =>{
-    let isValid=true;
+const foo = (str) => {
     let message = '';
-    let countNumbers = 0;
-    let countLetters = 0;
-   
-        if(str.length < 8){
-            isvalid = false;
-            return message = "Password is less than 8 characters"
-        }
-        while(isvalid){
-        for (let element in str.split('')){
-            if (element == ' '){
-                isvalid = false;
-                return message = "No spaces allowed"
-            }
-            if(element.toLowerCase() != element.toUpperCase()){
-                countNumbers++;
-            }
-            else if (element == element.toUpperCase()){
-                countNumbers++;
-            }
+    let hasDigits = false;
+    const MIN_PASSWORD_LENGTH = 8;
+    const CODE_0 = 48;
+    const CODE_9 = 57;
 
-            if(countLetters<1)    {
-                isvalid = false;
-                return message = "Should be at leat one uppercase letter"
-            }    
-            if(countNumbers<1){
-                isvalid = false;
-                return message = "Should be at leat one number"
-            }
-        };
+    if (str.length < MIN_PASSWORD_LENGTH) {
+        message += `Password is less than ${MIN_PASSWORD_LENGTH} characters\n`
+    }
+    if (str.includes(' ')) {
+        message += 'No spaces allowe\n';
+    }
+    if (str.toLowerCase() == str) {
+        message += 'Should be at least one uppercase letter\n';
+    }
+    for (let index = 0; index < str.length; index++) {
+        const charCode = str[index].charCodeAt(0);
+        if (charCode >= CODE_0 && charCode <= CODE_9) {
+            hasDigits = true;
+            break;
+        }
+    }
+    if (!hasDigits) {
+        message += 'Should be at least one number\n'
+    }
+    return message || 'Password is valid'
 }
 
-let result = foo ('aabbbaccaa');
+let result = foo('aabaa');
 console.log(result);
