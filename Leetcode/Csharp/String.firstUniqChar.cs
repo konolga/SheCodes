@@ -12,8 +12,7 @@ namespace Csharp
             if(count.ContainsKey(str[i]))
                 count[str[i]]++;
             else count.Add(str[i], 1);    
-        }
-        
+        }   
         // find the index
         for (int i = 0; i < str.Length; i++) {
             if (count[str[i]] == 1) 
