@@ -259,3 +259,11 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+vs
+vscode
+.vscode
+node_modules
+bin
+.eslintrc.json
+index
+package-lock.json
