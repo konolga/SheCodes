@@ -1,0 +1,24 @@
+{
+  "name": "checkio",
+  "version": "1.0.0",
+  "description": "My code small tasks practice at https://js.checkio.org",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konolga/checkio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konolga/checkio/issues"
+  },
+  "homepage": "https://github.com/konolga/checkio#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.11"
+  }
+}
