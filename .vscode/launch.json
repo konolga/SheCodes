@@ -5,11 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Leetcode/Csharp/bin/Debug/netcoreapp2.2/Csharp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Leetcode/Csharp",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
         }
     ]
 }

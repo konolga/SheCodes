@@ -1,3 +1,8 @@
 vs
 vscode
+.vscode
 node_modules
+bin
+.eslintrc.json
+index
+package-lock.json

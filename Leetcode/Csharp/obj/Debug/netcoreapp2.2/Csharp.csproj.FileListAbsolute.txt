@@ -1,0 +1,11 @@
+/Users/olga/Documents/GitHub/JavaScriptLearning/Leetcode/Csharp/bin/Debug/netcoreapp2.2/Csharp.deps.json
+/Users/olga/Documents/GitHub/JavaScriptLearning/Leetcode/Csharp/bin/Debug/netcoreapp2.2/Csharp.runtimeconfig.json
+/Users/olga/Documents/GitHub/JavaScriptLearning/Leetcode/Csharp/bin/Debug/netcoreapp2.2/Csharp.runtimeconfig.dev.json
+/Users/olga/Documents/GitHub/JavaScriptLearning/Leetcode/Csharp/bin/Debug/netcoreapp2.2/Csharp.dll
+/Users/olga/Documents/GitHub/JavaScriptLearning/Leetcode/Csharp/bin/Debug/netcoreapp2.2/Csharp.pdb
+/Users/olga/Documents/GitHub/JavaScriptLearning/Leetcode/Csharp/obj/Debug/netcoreapp2.2/Csharp.csprojAssemblyReference.cache
+/Users/olga/Documents/GitHub/JavaScriptLearning/Leetcode/Csharp/obj/Debug/netcoreapp2.2/Csharp.csproj.CoreCompileInputs.cache
+/Users/olga/Documents/GitHub/JavaScriptLearning/Leetcode/Csharp/obj/Debug/netcoreapp2.2/Csharp.AssemblyInfoInputs.cache
+/Users/olga/Documents/GitHub/JavaScriptLearning/Leetcode/Csharp/obj/Debug/netcoreapp2.2/Csharp.AssemblyInfo.cs
+/Users/olga/Documents/GitHub/JavaScriptLearning/Leetcode/Csharp/obj/Debug/netcoreapp2.2/Csharp.dll
+/Users/olga/Documents/GitHub/JavaScriptLearning/Leetcode/Csharp/obj/Debug/netcoreapp2.2/Csharp.pdb
