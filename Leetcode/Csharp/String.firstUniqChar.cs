@@ -19,6 +19,7 @@ namespace Csharp
             if (count[str[i]] == 1) 
                 return i;
         }
+
         return -1;
     }
     }
