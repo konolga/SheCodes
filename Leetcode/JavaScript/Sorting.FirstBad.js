@@ -30,3 +30,4 @@ var solution = function(isBadVersion) {
         return left;
     }
 }
+
