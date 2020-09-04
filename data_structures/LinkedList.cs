@@ -1,5 +1,5 @@
 // https://leetcode.com/explore/learn/card/linked-list/
-
+// It takes us O(N) time on average to visit an element by index
 public class LinkedList
 {
     private class ListNode
