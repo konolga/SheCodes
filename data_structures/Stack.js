@@ -1,3 +1,6 @@
+//LIFO principle
+//Implementation with linked list
+
 class Node {
     constructor(value) {
         this.value = value;
@@ -40,3 +43,22 @@ class Stack {
         return this;
     }
 }
+
+
+//Implementation with array
+class Stack {
+    constructor(){
+      this.array = [];
+    }
+    peek() {
+      return this.array[this.array.length-1];
+    }
+    push(value){
+      this.array.push(value);
+      return this;
+    }
+    pop(){
+      this.array.pop();
+      return this;
+    }
+  }
