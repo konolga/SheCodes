@@ -31,7 +31,7 @@ namespace ImplementStack
 
         public int pop()
         {
-            if (top > 0)
+            if (top < 0)
             {
                 Console.WriteLine("Stack is Empty");
                 return 0;
