@@ -1,5 +1,10 @@
 //by @aneagoi
 
+//Quicksort is a comparison-based algorithm that uses divide-and-conquer to sort an array.
+// The algorithm picks a pivot element, A[q]A[q], and then rearranges the array into 
+//two subarrays A[p...q-1]A[p…q−1], such that all elements are less than A[q]A[q], 
+//and A[q+1...r]A[q+1...r], such that all elements are greater than or equal to A[q]A[q].
+
 function quickSort(array, left, right){
     const len = array.length; 
     let pivot;
@@ -35,6 +40,6 @@ function quickSort(array, left, right){
       array[firstIndex] = array[secondIndex];
       array[secondIndex] = temp;
   }
-  
+
 // Time complexity: O(N log N)
 // Space complexity: O(log N)

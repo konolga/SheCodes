@@ -1,5 +1,8 @@
 //by @aneagoi
 
+//Mergesort is a comparison-based algorithm that focuses on how to merge together
+// two pre-sorted arrays such that the resulting array is also sorted.
+
 function mergeSort (array) {
   if (array.length === 1) {
     return array
@@ -9,8 +12,6 @@ function mergeSort (array) {
   const middle = Math.floor(length / 2)
   const left = array.slice(0, middle) 
   const right = array.slice(middle)
-  // console.log('left:', left);
-  // console.log('right:', right);
 
   
   return merge(
@@ -33,7 +34,6 @@ function merge(left, right){
        rightIndex++
     }
   }  
-  // console.log(left, right)
   return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
 }
 
