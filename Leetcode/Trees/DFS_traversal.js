@@ -25,5 +25,5 @@ function PostOrder(root) {
 }
 
 //Notes:
-//space complexity of recursive algorithm is proportinal
+//space complexity of recursive algorithm is proportional
 // to maximum depth of recursion tree generated: O(nm)
