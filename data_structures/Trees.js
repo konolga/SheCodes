@@ -38,6 +38,8 @@ class Node {
         }
       }
     }
+
+    //This is binary search: time complexity O(log n)
     lookup(value){
       if (!this.root) {
         return false;
