@@ -29,7 +29,12 @@ if 0 can perform, climb 1 stair, return 1
 if 1 recursively check one and two stairs, save to cache
 
 
-*/
 
-//see also https://www.youtube.com/watch?v=uHAToNgAPaM
-//https://leetcode.com/problems/climbing-stairs/solution/
+
+see also https://www.youtube.com/watch?v=uHAToNgAPaM
+https://leetcode.com/problems/climbing-stairs/solution/
+
+Time complexity : O(n). Size of recursion tree can go upto n. (without memoization would be O(2^n))
+Space complexity : O(n). The depth of recursion tree can go upto n.
+
+*/
