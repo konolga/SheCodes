@@ -4,7 +4,7 @@ https://leetcode.com/problems/fibonacci-number/solution/
 // (2^N) time complexity -> horrible
 function fibonacci(m) {
 
-    if (n < 2) return n;
+    if (m < 2) return m;
 
     // or if (num <= 1) return 1;
 
