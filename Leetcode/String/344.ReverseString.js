@@ -16,16 +16,19 @@ var reverseString = function(s) {
 //Space complexity : O(N) to keep the recursion stack.
 
 var reverseString = function(s) {
-    const reverse = function (string, start, end){
+    
+    const swap = function (string, start, end){
         
     if(start >= end) return;
         
     let temp = string[start];
-    string[start++] = string[end];
-    string[end--] = temp;
+    string[start] = string[end];
+    string[end] = temp;
+    start++;
+    end--;
         
-    return reverse(string, start, end); 
+    swap(string, start, end); 
     }
     
-    reverse(s, 0, s.length-1);
+    swap(s, 0, s.length-1);
 };
