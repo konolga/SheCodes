@@ -43,7 +43,7 @@ const BreadthFirstSearchRecursive = (queue, list) => {
     list.push(currentNode.value);
 
     if (currentNode.left) {
-        queue.push(currentNode.left);
+        queue.push(currentNode.left);0
     }
     if (currentNode.right) {
         queue.push(currentNode.right);
