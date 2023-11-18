@@ -17,3 +17,18 @@ var twoSum = function (nums, target) {
     }
 
 };
+
+const result = function TwoSums (array, num) {
+  if(!array || array.length<=1){
+    return null;
+  }
+  let a, b;
+  array.forEach((n, i)=>{
+      array.forEach((m, j=>{
+        if((n != m) && (n + m) == num){
+          return [i,j];
+        } 
+      });
+  });
+ return null;
+}
