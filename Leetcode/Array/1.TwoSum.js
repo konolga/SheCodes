@@ -32,3 +32,16 @@ const result = function TwoSums (array, num) {
   });
  return null;
 }
+
+var twoSum = function(nums, target) {
+  const map = {};
+  for (let i = 0; i < nums.length; i++) {
+    const num1 = nums[i];
+    const num2 = target - nums[i];
+    if (map.hasOwnProperty(num2)) {
+      return [map[num2], i];
+    }
+    map[num1]=i;
+  }
+  throw new Error("No solution found");
+};
