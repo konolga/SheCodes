@@ -33,3 +33,24 @@ var isValid = function (s,stack=[]) {
 };
 
 console.log(isValid("()[]{"));
+
+
+var isValid = function (s) {
+    const mapBrackets = {
+        "{": "}",
+        "[": "]",
+        "(": ")"
+    };
+    let stack = [];
+    for (let ch of s) {
+        if (mapBrackets[ch]) { // if opening bracket
+            stack.push(ch);
+        } else {
+            if (!stack.length || mapBrackets[stack[stack.length - 1]] !== ch) {
+                return false;  // if the stack is empty or not matching brackets
+            }
+            stack.pop(); // otherwise, pop the opening bracket from the stack
+        }
+    }
+    return !stack.length;
+};
