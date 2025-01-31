@@ -62,3 +62,29 @@ class Stack {
       return this;
     }
   }
+
+  //Implementation with queue
+  class MyStack {
+    constructor() {
+      this.queue = [];
+    }
+
+    push(x) {
+      this.queue.push(x);
+      for (let i = 0; i < this.queue.length - 1; i++) {
+        this.queue.push(this.queue.shift());
+      }
+    }
+
+    pop() {
+      return this.queue.shift(); // remove and retur first
+    }
+
+    top() {
+      return this.queue[0]; // return first without removing
+    }
+
+    empty() {
+      return this.q.length === 0;
+    }
+  }
