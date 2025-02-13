@@ -267,3 +267,8 @@ bin
 .eslintrc.json
 index
 package-lock.json
+.replit
+.replit.backup
+.replit.nix
+.replit.nix.backup
+
